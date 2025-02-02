@@ -113,7 +113,7 @@ export default function TempleWebsite() {
           <div className="relative rounded-2xl">
             <div className="">
               {/* Address in Column */}
-              <div className="flex flex-col gap-6 items-center text-center">
+              <div className="flex flex-col gap-8 items-center text-center ">
                 <div className="text-xl">
                   <p>
                     శ్రీ భద్రకాళీ సమేత శ్రీ కళ్యాణ వీరభద్ర స్వామి వారు, <br />
@@ -135,7 +135,7 @@ export default function TempleWebsite() {
               </div>
 
               {/* Temple Location Link */}
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-10">
                 <div>
                   {/* Social Media Links */}
                   <div className="text-center pt-4 pb-4">
@@ -173,18 +173,53 @@ export default function TempleWebsite() {
                   </div>
                 </div>
 
-                <div className="pt-8">
-                  <div className="flex items-center gap-4 justify-center pt-4 pb-4">
-                    <MapPin className="w-8 h-8 text-orange-600" />
-                    <a
-                      href="https://maps.app.goo.gl/EEEChWE2wCZbPr8t5?g_st=com.google.maps.preview.copy"
+                <div>
+                  {/* Social Media Links */}
+                  <div className="text-center pt-4 pb-3">
+                    <span className="text-lg font-bold">Locate us at</span>
+                  </div>
+                  <div className="flex gap-4 justify-center">
+                    {/* <a
+                      href="https://www.instagram.com/sriveerabhadraswamy_ambajipeta"
                       target="_blank"
-                      className="text-xl text-orange-600 hover:text-orange-700 underline"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
                     >
-                      Locate us at
+                      <Instagram className="w-8 h-8" />
                     </a>
+                    <a
+                      href="https://www.facebook.com/share/19W8BmF4CM/?mibextid=qi2Omg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      <Facebook className="w-8 h-8" />
+                    </a>
+                    <a
+                      href="https://x.com/veerabhadra_abj?t=6LPNM1fJGoARbq6MS8GIew&s=08"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-500 hover:text-blue-700 transition-colors"
+                    >
+                      <img
+                        src="https://i.pinimg.com/736x/ee/5e/5f/ee5e5f58afcfb20500d8f8f1489ea191.jpg"
+                        alt="Twitter Icon"
+                        className="w-12 h-8"
+                      />
+                    </a> */}
+
+                    <div className="flex items-center  justify-center ">
+                      <MapPin className="w-8 h-8 text-orange-600" />
+                      <a
+                        href="https://maps.app.goo.gl/EEEChWE2wCZbPr8t5?g_st=com.google.maps.preview.copy"
+                        target="_blank"
+                        className="text-xl text-orange-600 hover:text-orange-700 underline"
+                      ></a>
+                    </div>
                   </div>
                 </div>
+
+              
               </div>
             </div>
           </div>
