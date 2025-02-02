@@ -110,26 +110,31 @@ export default function TempleWebsite() {
       <main className="px-4 py-12">
         <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-100 to-purple-100 rounded-2xl opacity-50"></div>
-          <div className="relative  rounded-2xl">
+          <div className="relative rounded-2xl">
             <div className="">
               {/* Address in Column */}
-              <div className="flex flex-col gap-6 items-center ">
-                <div className="text-2xl">
-                  <h3>శ్రీ కళ్యాణ వీరభద్ర స్వామి ఆలయం అంబాజీపేట,</h3>
-                  <h3> M R O ఆఫీస్ వెనుక,కొర్లపాటి వారి పాలెం ,</h3>
-                  <h4> అంబాజీపేట, కోనసీమ జిల్లా,</h4>
-                  <h5> ఆంధ్రప్రదేశ్, 533214</h5>
+              <div className="flex flex-col gap-6 items-center text-center">
+                <div className="text-xl">
+                  <p>
+                    శ్రీ భద్రకాళీ సమేత శ్రీ కళ్యాణ వీరభద్ర స్వామి వారు, <br />
+                    M R O ఆఫీస్ వెనుక, కొర్లపాటి వారి పాలెం, <br />
+                    అంబాజీపేట, కోనసీమ జిల్లా, <br />
+                    ఆంధ్రప్రదేశ్ - 533214
+                  </p>
                 </div>
 
-                <div className="text-xl pl-2">
-                  <h3>M R O Office Back side, Korlapati Vari Palem,</h3>
-                  <h4> Ambajipeta, Konaseema Dt,</h4>
-                  <h5> AndhraPradesh, 533214</h5>
+                <div className="text-xl">
+                  <p>
+                    Sree Bhadrakali Sametha Sree Kalyana Veerabadhra Swamy Varu,{" "}
+                    <br />
+                    M R O Office Back side, Korlapati Vari Palem, <br />
+                    Ambajipeta, Konaseema Dt, <br />
+                    Andhra Pradesh- 533214
+                  </p>
                 </div>
               </div>
 
               {/* Temple Location Link */}
-
               <div className="flex justify-between">
                 <div>
                   {/* Social Media Links */}
@@ -144,7 +149,6 @@ export default function TempleWebsite() {
                       className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
                     >
                       <Instagram className="w-8 h-8" />
-                      {/* <span className="text-lg">Follow on Instagram</span> */}
                     </a>
                     <a
                       href="https://www.facebook.com/share/19W8BmF4CM/?mibextid=qi2Omg"
@@ -153,7 +157,6 @@ export default function TempleWebsite() {
                       className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
                     >
                       <Facebook className="w-8 h-8" />
-                      {/* <span className="text-lg">Follow on Facebook</span> */}
                     </a>
                     <a
                       href="https://x.com/veerabhadra_abj?t=6LPNM1fJGoARbq6MS8GIew&s=08"
@@ -166,7 +169,6 @@ export default function TempleWebsite() {
                         alt="Twitter Icon"
                         className="w-12 h-8"
                       />
-                      {/* <span className="text-lg">Follow on Twitter</span> */}
                     </a>
                   </div>
                 </div>
@@ -179,7 +181,7 @@ export default function TempleWebsite() {
                       target="_blank"
                       className="text-xl text-orange-600 hover:text-orange-700 underline"
                     >
-                      View Temple Location
+                      Locate us at
                     </a>
                   </div>
                 </div>
@@ -190,7 +192,7 @@ export default function TempleWebsite() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-600 via-purple-600 to-green-600 text-white py-2">
+      <footer className="bg-gradient-to-r from-gray-600 via-purple-600 to-green-600 text-white py-4">
         <div className="text-center">
           <div className="flex items-center justify-center">
             <p>&copy; Designed & Developed by Swamy Valeti</p>
