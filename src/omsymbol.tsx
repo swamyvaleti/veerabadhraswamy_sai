@@ -1,4 +1,4 @@
-import { MapPin, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Instagram, Facebook } from "lucide-react";
 
 const Deepam = ({ className }: any) => (
   <svg viewBox="0 0 100 100" className={className}>
@@ -90,7 +90,6 @@ const Deepam = ({ className }: any) => (
 );
 
 export default function TempleWebsite() {
-  // Rest of the component remains the same
   return (
     <div className="bg-gradient-to-b from-orange-50 via-purple-50 to-orange-50">
       {/* Header with Deepams */}
@@ -98,7 +97,10 @@ export default function TempleWebsite() {
         <div className="container mx-auto flex items-center justify-center gap-4">
           <Deepam className="w-16 h-16" />
           <h1 className="text-2xl md:text-3xl font-bold text-center">
-            శ్రీ భద్రకాళీ సమేత శ్రీ కళ్యాణ వీరభద్ర స్వామి వారు
+            {/* శ్రీ భద్రకాళీ సమేత శ్రీ కళ్యాణ వీరభద్ర స్వామి వారు */}
+            1992 మహాశివరాత్రి రోజున అంబాజీపేటలో కొలువై దినదిన దేవిప్యమానంగా
+            అభివృద్ధి చెందుతూ కోరిన కోరికలు తీర్చే కనిపించి మాట్లాడే దైవం
+            బోనగిరి వారి వీరన్న
           </h1>
           <Deepam className="w-16 h-16" />
         </div>
@@ -110,59 +112,77 @@ export default function TempleWebsite() {
           <div className="absolute inset-0 bg-gradient-to-r from-orange-100 to-purple-100 rounded-2xl opacity-50"></div>
           <div className="relative  rounded-2xl">
             <div className="">
-              <div className="flex items-center gap-4 justify-center"></div>
-
-              <div className="flex flex-row justify-between  gap-4">
-                <div>
-                  <h3>Sri Kalyana Veerabhadra Swamy Temple Ambajipeta ,</h3>
-                  <h4>Dr. B. R. Ambedkar Konaseema District</h4>
-                  <h5> AndhraPradesh, 533214</h5>
-                </div>
-
-                <div>
+              {/* Address in Column */}
+              <div className="flex flex-col gap-6 items-center ">
+                <div className="text-2xl">
                   <h3>శ్రీ కళ్యాణ వీరభద్ర స్వామి ఆలయం అంబాజీపేట,</h3>
-                  <h4> డా. బి. ఆర్. అంబేద్కర్ కొనసీమ జిల్లా</h4>
+                  <h3> M R O ఆఫీస్ వెనుక,కొర్లపాటి వారి పాలెం ,</h3>
+                  <h4> అంబాజీపేట, కోనసీమ జిల్లా,</h4>
                   <h5> ఆంధ్రప్రదేశ్, 533214</h5>
                 </div>
+
+                <div className="text-xl pl-2">
+                  <h3>M R O Office Back side, Korlapati Vari Palem,</h3>
+                  <h4> Ambajipeta, Konaseema Dt,</h4>
+                  <h5> AndhraPradesh, 533214</h5>
+                </div>
               </div>
-              <div className="flex items-center gap-4 justify-center pt-4 pb-4">
-                <MapPin className="w-8 h-8 text-orange-600" />
-                <a
-                  href="https://maps.app.goo.gl/EEEChWE2wCZbPr8t5?g_st=com.google.maps.preview.copy"
-                  target="_blank"
-                  className="text-xl text-orange-600 hover:text-orange-700 underline"
-                >
-                  View Temple Location
-                </a>
-              </div>
-              <div className="flex gap-4 justify-center">
-                <a
-                  href="https://www.instagram.com/sriveerabhadraswamy_ambajipeta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
-                >
-                  <Instagram className="w-8 h-8" />
-                  <span className="text-lg">Follow on Instagram</span>
-                </a>
-                <a
-                  href="https://www.facebook.com/share/19W8BmF4CM/?mibextid=qi2Omg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
-                >
-                  <Facebook className="w-8 h-8" />
-                  <span className="text-lg">Follow on Facebook</span>
-                </a>
-                <a
-                  href="https://x.com/veerabhadra_abj?t=6LPNM1fJGoARbq6MS8GIew&s=08"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-500 hover:text-blue-700 transition-colors"
-                >
-                  <Twitter className="w-8 h-8" />
-                  <span className="text-lg">Follow on Twitter</span>
-                </a>
+
+              {/* Temple Location Link */}
+
+              <div className="flex justify-between">
+                <div>
+                  {/* Social Media Links */}
+                  <div className="text-center pt-4 pb-4">
+                    <span className="text-lg font-bold">Follow us</span>
+                  </div>
+                  <div className="flex gap-4 justify-center">
+                    <a
+                      href="https://www.instagram.com/sriveerabhadraswamy_ambajipeta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
+                    >
+                      <Instagram className="w-8 h-8" />
+                      {/* <span className="text-lg">Follow on Instagram</span> */}
+                    </a>
+                    <a
+                      href="https://www.facebook.com/share/19W8BmF4CM/?mibextid=qi2Omg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      <Facebook className="w-8 h-8" />
+                      {/* <span className="text-lg">Follow on Facebook</span> */}
+                    </a>
+                    <a
+                      href="https://x.com/veerabhadra_abj?t=6LPNM1fJGoARbq6MS8GIew&s=08"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-500 hover:text-blue-700 transition-colors"
+                    >
+                      <img
+                        src="https://i.pinimg.com/736x/ee/5e/5f/ee5e5f58afcfb20500d8f8f1489ea191.jpg"
+                        alt="Twitter Icon"
+                        className="w-12 h-8"
+                      />
+                      {/* <span className="text-lg">Follow on Twitter</span> */}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="pt-8">
+                  <div className="flex items-center gap-4 justify-center pt-4 pb-4">
+                    <MapPin className="w-8 h-8 text-orange-600" />
+                    <a
+                      href="https://maps.app.goo.gl/EEEChWE2wCZbPr8t5?g_st=com.google.maps.preview.copy"
+                      target="_blank"
+                      className="text-xl text-orange-600 hover:text-orange-700 underline"
+                    >
+                      View Temple Location
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -173,7 +193,7 @@ export default function TempleWebsite() {
       <footer className="bg-gradient-to-r from-gray-600 via-purple-600 to-green-600 text-white py-2">
         <div className="text-center">
           <div className="flex items-center justify-center">
-            <p>&copy;Designe & Developed by Swamy valeti </p>
+            <p>&copy; Designed & Developed by Swamy Valeti</p>
           </div>
         </div>
       </footer>
